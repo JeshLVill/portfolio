@@ -17,11 +17,12 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    overflow:hidden;
 }
 
 header {
-    background-color: #666;
-    color: white;
+    background-color: #493fffc8;
+    color: #f0f0f0;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -69,7 +70,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 120px 20px 60px;
+    padding: 100px 20px 60px;
 }
 
 .landing-content {
@@ -78,7 +79,7 @@ nav a:hover {
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 24px;
     text-align: center;
-    padding: 32px;
+    padding: 25px;
     max-width: 520px;
     width: 100%;
     box-shadow: 0 20px 60px rgba(0,0,0,0.18);
@@ -146,7 +147,7 @@ main {
 
 .detail {
     margin: 5px 0;
-    color: #666;
+    color: #ffffff;
 }
 
 .tech-grid, .cert-grid {
@@ -164,10 +165,10 @@ main {
 }
 
 footer {
-    background-color: #333;
+    background-color: #493fff;
     color: white;
     text-align: center;
-    padding: 20px;
+    
 }
 
 /* MOBILE (smaller than 768px) */
