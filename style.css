@@ -73,7 +73,7 @@ nav a:hover {
 }
 
 .landing-content {
-        background: rgba(255, 255, 255, 0.18);
+    background: #493fff57;
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 24px;
@@ -108,6 +108,7 @@ nav a:hover {
 .get-started {
     padding: 14px 26px;
 }
+
 
 .container {
     display: flex;
@@ -156,11 +157,32 @@ main {
 }
 
 .tech-item, .cert-item {
-    background-color: #999;
+    background-color: rgba(74, 63, 255, 0.8);
     padding: 40px;
     border-radius: 4px;
     text-align: center;
     color: white;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tech-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.tech-item p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tech-item img:hover{
+
+    transform: translateY(-5px);
+    box-shadow: #ffffff;
 }
 
 footer {
