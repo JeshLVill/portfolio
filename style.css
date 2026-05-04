@@ -16,12 +16,12 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: white;
 }
 
 header {
     background-color: #493fffc8;
-    color: #f0f0f0;
+    color: white;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -64,7 +64,7 @@ nav a:hover {
     transform: translateY(-1px);
 }
 
-.landing {
+.home {
     min-height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
@@ -72,7 +72,7 @@ nav a:hover {
     padding: 100px 20px 60px;
 }
 
-.landing-content {
+.home-content {
     background: #493fff57;
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -84,7 +84,7 @@ nav a:hover {
     box-shadow: 0 20px 60px rgba(0,0,0,0.18);
 }
 
-.landing-pic {
+.home-pic {
     width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -93,15 +93,15 @@ nav a:hover {
     border: 4px solid rgba(255,255,255,0.5);
 }
 
-.landing-content h2 {
+.home-content h2 {
     font-size: 2.4rem;
     margin-bottom: 16px;
     color: white;
 }
 
-.landing-content p {
+.home-content p {
     margin-bottom: 26px;
-    color: #f3f3ff;
+    color: white;
     line-height: 1.6;
 }
 
@@ -147,7 +147,7 @@ main {
 
 .detail {
     margin: 5px 0;
-    color: #ffffff;
+    color: white;
 }
 
 .tech-grid, .cert-grid {
@@ -157,7 +157,7 @@ main {
 }
 
 .tech-item, .cert-item {
-    background-color: rgba(74, 63, 255, 0.8);
+    background-color: rgba(73, 63, 255, 0.568);
     padding: 40px;
     border-radius: 4px;
     text-align: center;
@@ -167,8 +167,8 @@ main {
 }
 
 .tech-item img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     margin-bottom: 10px;
 }
