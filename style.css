@@ -175,7 +175,7 @@ main {
 
 .cert-item img {
     width: 600px;
-    height: 5git00px;
+
     object-fit: contain;
     margin-bottom: 10px;
 }
@@ -189,13 +189,6 @@ main {
 .tech-item img:hover, .cert-item img:hover    {
     transform: translateY(-5px);
     box-shadow: #ffffff;
-}
-
-footer {
-    background-color: #493fff;
-    color: white;
-    text-align: center;
-
 }
 
 /* MOBILE (smaller than 768px) */
