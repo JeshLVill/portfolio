@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About | Jeshurun Villamor</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -27,7 +30,9 @@
         <header>
             <h1>Jeshurun Villamor</h1>
             <div class="header-actions">
-                <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-hidden="true">
+                <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"><span></span></label>
+                <nav class="nav-links">
                     <a class="button home-button" href="index.html">Home</a>
                     <a class="button about-button" href="about.html">About</a>
                     <a class="button techstack-button" href="tech-stack.html">Tech Stack</a>
@@ -37,25 +42,21 @@
         </header>
 
         <div class="container">
-            <main>
-                <section id="profile">
+            <div class="about-content">
+                <main>
+                    <div class="about-grid">
+                        <div class="about-box">
+                            <h2>About Me</h2>
+                            <p>As a passionate developer, I actively seek out new technologies and enjoy working on interactive projects. I have developed applications as a Java programmer, and built systems based on GUIs and databases. These experiences created opportunities to strengthen my programming and problem solving skills. I prefer to build well-designed projects and think about the interactive experiences of the users. I strive to improve my creativity and technical expertise in all my work, beyond programming projects.</p>
+                        </div>
 
-                    <div class="profile-info">
-                        <h2>About</h2>
-                        <p class="detail">Jeshurun Villamor</p>
+                        <div class="about-box">
+                            <h2>Aspirations</h2>
+                            <p>I intend to become an accomplished software developer with an aspiration to work in game development. I have a keen interest in designing games and other digital products that can be enjoyed by many people while at the same time upgrading my programming, design, and development skills. My dream for the future is to work in interesting projects that are both creative and technological.</p>
+                        </div>
                     </div>
-                </section>
-    
-                <section id="about">
-                    <h2>Who I Am</h2>
-                    <p>Sino bako di ko kilala sarili ko gusto ko lang matulog at kumain. (Place Holder)</p>
-                </section>
-    
-                <section id="aspirations">
-                    <h2>Aspirations</h2>
-                    <p>Ang gusto ko ay maging isang game dev para gumawa ng laro. (Place Holder)</p>
-                </section>
-            </main>
+                </main>
+            </div>
         </div>
 
     </body>

@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tech Stack | Jeshurun Villamor</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -27,7 +30,9 @@
         <header>
             <h1>Jeshurun Villamor</h1>
             <div class="header-actions">
-                <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-hidden="true">
+                <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"><span></span></label>
+                <nav class="nav-links">
                     <a class="button home-button" href="index.html">Home</a>
                     <a class="button about-button" href="about.html">About</a>
                     <a class="button techstack-button" href="tech-stack.html">Tech Stack</a>
@@ -80,6 +85,8 @@
                         <div class="tech-item">
                             <img src="images/JavaScript.png" alt="JavaScript">
                             <p>JavaScript</p>
+                        </div>
+                    </div>
                 </section>
             </main>
         </div>
