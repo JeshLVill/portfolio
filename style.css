@@ -261,7 +261,7 @@ nav a:hover {
     padding: 30px 0;
     max-width: 1100px;
     width: 100%;
-    box-shadow: none;
+    padding-left: 140px;
 }
 
 .about-grid {
@@ -273,14 +273,15 @@ nav a:hover {
     background: #473dff61;
     border: 1px solid #ffffff33;
     border-radius: 24px;
-    padding: 30px;
+    padding: 35px;
+    font-size: 22px;
     box-shadow: inset 0 0 0 1px #ffffff0d, 0 20px 40px #0000002e;
 }
 
 .about-box h2 {
     margin-bottom: 18px;
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .about-box p {

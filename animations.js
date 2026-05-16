@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   if (typeof gsap === 'undefined') return;
 
-  // Page entrance
   gsap.to('body', { duration: 0.6, opacity: 1, ease: 'power1.out' });
   gsap.from('header', { duration: 0.8, y: -20, opacity: 0, ease: 'power3.out' });
 
@@ -17,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Button hover and click interactions
   document.querySelectorAll('.button').forEach((button) => {
     button.addEventListener('mouseenter', () => {
       gsap.to(button, { scale: 1.04, duration: 0.18, ease: 'power1.out' });
@@ -33,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Card hover interactions
   document.querySelectorAll('.tech-item, .cert-item, .about-box').forEach((card) => {
     card.addEventListener('mouseenter', () => {
       gsap.to(card, { scale: 1.02, duration: 0.2, ease: 'power1.out' });
@@ -43,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Smooth page transitioning
   document.querySelectorAll('a[href$=".html"]').forEach((link) => {
     if (link.target === '_blank') return;
     const url = new URL(link.href, location.href);
