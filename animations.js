@@ -63,4 +63,45 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  const background = document.getElementById('background');
+  if (background && window.VANTA && typeof VANTA.GLOBE === 'function') {
+    VANTA.GLOBE({
+      el: '#background',
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      scaleMobile: 1.0,
+      color: 0x4a3fff,
+    });
+  }
+
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImg');
+  const modalTriggers = document.querySelectorAll('img[data-modal-src]');
+
+  function openModal(src) {
+    if (!modal || !modalImg) return;
+    gsap.to(modal, { opacity: 1, duration: 0.25 });
+    modal.classList.remove('hidden');
+    modalImg.src = src;
+    gsap.fromTo(modalImg, { scale: 0.85, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.25 });
+  }
+
+  modalTriggers.forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      openModal(trigger.dataset.modalSrc || trigger.src);
+    });
+  });
+
+  if (modal) {
+    modal.addEventListener('click', () => {
+      gsap.to(modal, { opacity: 0, duration: 0.2, onComplete: () => {
+        modal.classList.add('hidden');
+      }});
+    });
+  }
 });

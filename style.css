@@ -7,7 +7,6 @@
     z-index: -1;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -65,32 +64,6 @@ body.transition-out {
 header {
     background-color: #823fffc7;
     color: white;
-    padding: 20px !important;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    backdrop-filter: blur(10px);
-}
-
-header h1 {
-    font-size: 24px !important;
-    margin: 0 !important;
-    font-weight: 700 !important;
-    letter-spacing: normal;
-    line-height: 1 !important;
-    padding: 0 !important;
-    box-sizing: border-box !important;
-    height: auto !important;
-    display: block !important;
-}
-
-header {
-    background-color: #823fffc7;
-    color: white;
     padding: 27px !important;
     margin-bottom: 20px;
     display: flex !important;
@@ -104,6 +77,18 @@ header {
     min-height: 78px !important;
     max-height: 78px !important;
     box-sizing: border-box !important;
+}
+
+header h1 {
+    font-size: 24px !important;
+    margin: 0 !important;
+    font-weight: 700 !important;
+    letter-spacing: normal;
+    line-height: 1 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    height: auto !important;
+    display: block !important;
 }
 
 nav a {
@@ -202,9 +187,10 @@ nav a:hover {
         width: 100%;
         padding: 16px;
         margin-top: 12px;
-        background: #493fff38;
+        background: #493fff;
         border-radius: 18px;
         border: 1px solid #ffffff2e;
+        backdrop-filter: blur(12px);
     }
 
     .nav-links a {
@@ -225,11 +211,13 @@ nav a:hover {
     text-decoration: none;
     font-weight: 600;
     transition: transform 0.2s ease, background-color 0.2s ease;
+    border: 1px solid #ffffff66;
 }
 
 .button:hover {
     background-color: #3326cc;
     transform: translateY(-1px);
+    border-color: rgba(255, 255, 255, 1);
 }
 
 .home {
@@ -261,6 +249,7 @@ nav a:hover {
     padding: 30px 0;
     max-width: 1100px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .about-grid {
@@ -359,6 +348,12 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+}
+
+.certificates-grid {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .tech-item, .cert-item {
